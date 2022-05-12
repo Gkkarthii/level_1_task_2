@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.banner {
+    background: url("banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 800px;
+    width: 100%;
+}
+.container {
+    border-radius: 5px;
+    width: 650px;
+    margin: 50px auto;
+    background-color: #fff;
+    color: #54caad;
+}
+header {
+    text-align: center;
+    background-color: #eff0f1;
+    border-bottom: 4px solid #e6e5e6;
+    padding: 20px;
+    font-size: 40px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #757474;
+}
+.wrapper {
+    margin: 25px 40px;
+}
+.row {
+    display: flex; 
+    padding: 10px 0;
+}
+.column {
+    width: 50%;
+    padding: 0 10px;
+}
+.column:last-child {
+    margin-left: auto;
+    padding-right: 0;
+}
+.column label {
+    display: block;
+    margin-bottom: 5px;
+}
+.column input,
+.fullwidth textarea,
+.column select {
+    width: 100%;
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.column:first-child {
+    padding-left: 0;
+}
+.fullwidth .column, .fullwidth textarea {
+    width: 100%;
+}
+.radio-group input {
+    width: auto;
+}
+.radio-group {
+    display: flex;
+}
+.range input {
+    width: 75%;
+}
+span.count {
+    float: right;
+    background: #54caad;
+    color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: -10px;
+}
+footer {
+    background-color: #eff0f1;
+    border-top: 3px solid;
+    border-color: #e6e5e6;
+    padding: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: right;
+}
+footer a {
+    background-color: #54caad;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: #54caad;
+    min-width: 100px;
+}
+.fullwidth textarea {
+    min-height: 100px;
+}
+.ack {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+
+@media screen and (min-width:320px) and (max-width:767px) {
+    body {
+        padding:20px;
+    }
+    .container {
+        width: 100%;
+        margin: 0;
+    }
+    .wrapper {
+        margin: 20px;
+    }        
+    .row {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .column {
+        width: 100%;
+        padding: 0 0 15px;
+    }
+}
+@media screen and (min-width:481px) and (max-width:767px){	
+	.container {
+        width: 70%;
+        margin: auto;
+    }
+}

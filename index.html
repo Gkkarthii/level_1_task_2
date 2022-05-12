@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form-style.css">
+    <title>Account form</title>
+</head>
+<body class="banner">
+    <div class="container">
+        <header>Create Account</header>
+        <div class="wrapper">
+            <div class="row">
+                <div class="column">
+                    <label for="fname">First Name *</label>
+                    <input type="text" id="fname" placeholder="Enter Your first name" minlength="2" maxlength="25"/>
+                </div>
+                <div class="column">
+                    <label for="lname">Last name</label>
+                    <input type="text" id="lname" placeholder="Enter your last name" minlength="2" maxlength="25"/>
+                </div>
+            </div>
+            <div class="row fullwidth">
+                <div class="column">
+                    <label for="mail">Email</label>
+                    <input type="email" id="mail" placeholder="example@gmail.com"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label for="pwd">Password</label>
+                    <input type="password" id="pwd" placeholder="AAbb@#12" minlength="8" maxlength="12"/>
+                </div>
+                <div class="column">
+                    <label for="cpwd">Confirm Password</label>
+                    <input type="password" id="cpwd" placeholder="AAbb@#12" minlength="8" maxlength="12"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label>Gender:</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="gender"/> Male</label>
+                        <label><input type="radio" name="gender"/> Female</label>
+                        <label><input type="radio" name="gender"/> Others</label>
+                    </div>
+                </div>
+                <div class="column">
+                    <label>Hobbies:</label>
+                    <div class="radio-group">
+                        <label><input type="checkbox" name="Hobbies"/> Music</label>
+                        <label><input type="checkbox" name="Hobbies"/> Travel</label>
+                        <label><input type="checkbox" name="Hobbies"/> Sports</label>
+                        <label><input type="checkbox" name="Hobbies"/>Movies</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">    
+                <div class="column">
+                    <label for="income">Source of income</label>
+                    <select>
+                        <option>--select--</option>
+                        <option>Government Employee</option>
+                        <option>Self Employed</option>
+                        <option>Business</option>
+                        <option>Private Employee</option>
+                        <option>Daily wages</option>
+                        <option>IT sector</option>
+                        <option>Organisations</option>
+                        <option>Politics</option>
+                    </select>
+                </div>    
+                <div class="column range">
+                    <label for="income">Income</label>
+                    <input type="range" id="income"/>
+                    <span class="count">20K</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label for="pic">Upload Profile Picture</label>
+                    <input type="file" id="pic"/>
+                </div>
+                <div class="column">
+                    <label for="age">Age</label>
+                    <input type="text" id="age" maxlength="2"/>
+                </div>
+            </div>
+            <div class="row fullwidth">
+                <div class="column">
+                    <label for="bio">Bio</label>
+                    <textarea id="bio" placeholder="Say about yourself"></textarea>
+                </div>
+            </div>
+        </div>
+        <footer>                
+            <a href="form 2.html" title="Next">Next</a>
+        </footer>
+    </div>
+</body>
+</html>
